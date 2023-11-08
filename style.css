@@ -100,23 +100,16 @@ main{
 @media screen and (max-width: 600px) {
     /* Your CSS rules for screens with a maximum width of 600px go here */
 
-    .about-me-h1{
-        font-size: 1rem;
-    }
-    .about-me-p{
-        font-size: 0.5rem;
+    #6969{
+        display: block;
     }
 
   }
   
   /* Styles for screens with a minimum width of 601px */
   @media screen and (min-width: 601px) {
-    /* Your CSS rules for screens with a minimum width of 601px go here */
-    .about-me-h1{
-        font-size: 1rem;
-    }
-    .about-me-p{
-        font-size: 1rem;
+    #6969{
+        display: flex;
     }
   }
   
