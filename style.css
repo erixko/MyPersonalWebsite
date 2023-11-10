@@ -20,6 +20,7 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
     z-index: 1;
     border-radius: 50%;
     margin: 10%;
+    
   }
   .text{
     display: block;
@@ -56,17 +57,20 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
 
   .About-me-page {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items horizontally in the center */
+    flex-direction:row;
+    align-items: center;
   }
 
   .my-personal-image {
     width: 40%;
     height: auto;
     border-radius: 50%;
+    margin-left: 5rem;
+  }
+  #0001{
+    flex-direction: row;
   }
   .text{
-    display: block;
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
@@ -139,7 +143,7 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
   0%   { background: #2d3a3a; }
   20%  { background: #293434; }
   40%  { background: #242e2e; }
-  60%  { background: #1f2929; }
+  60%  { background: #424e4e; }
   80%  { background: #1b2323; }
   100% { background: #2d3a3a; }
 }
