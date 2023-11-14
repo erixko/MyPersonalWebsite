@@ -104,6 +104,7 @@
                         <a target="_blank" href="https://github.com/erixko"><img class="contact-me-images" src="images/github.png"></a>
                         <a target="_blank" href="https://www.instagram.com/taric.erixko"><img class="contact-me-images" src="images/instagram.png"></a>
                         <a><img class="contact-me-images" src="images/gmail.png" id="email"></a>
+                        
                         <script>
                             document.getElementById('email').addEventListener('click', function() {
                               var textToCopy = 'michalvrablic01@gmail.com';
@@ -122,7 +123,29 @@
                         
                               alert('Email copied');
                             });
-                          </script>
+                        </script>
+                        
+                        <a><img src="images/discord.png" class="contact-me-images" id="discord"></a>
+                        
+                        <script>
+                            document.getElementById('discord').addEventListener('click', function() {
+                              var textToCopy = 'bezdomoveczfilakova';
+
+                              var tempTextArea = document.createElement('textarea');
+                              tempTextArea.value = textToCopy;
+                              document.body.appendChild(tempTextArea);
+                        
+                              tempTextArea.select();
+                              tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+                        
+                              document.execCommand('copy');
+                        
+
+                              document.body.removeChild(tempTextArea);
+                        
+                              alert('Discord copied');
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
