@@ -3,11 +3,13 @@
     <head>
         <title>Michal Vrablic</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
     </head>
 
     <body>
         <header>
+            <div>
+                <a href="login.html" style="text-decoration: none;">Login</a>
+            </div>
             <div>
                 <h1 style="text-align: center; font-size: 3rem;" class="prime-name">
                     <div style="margin-left: -6rem;">
@@ -24,7 +26,7 @@
         <main>
             <div>
                 <div class="About-me-page">
-                    <img src="abtme.jpg" alt="Your Image" class="my-personal-image">
+                    <img src="images/abtme.jpg" alt="Your Image" class="my-personal-image">
                     <div id="0001" class="abt1">
                         <div class="headers">
                             <h1>About me</h1>
@@ -51,7 +53,7 @@
                 <div>
                     <div style="display: flex; flex-direction:column;">
                         <div>
-                            <img src="java.png" class="skill-img">
+                            <img src="images/java.png" class="skill-img">
                         </div>
 
                         <div class="main-java">
@@ -60,7 +62,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="html.png" class="skill-img">
+                            <img src="images/html.png" class="skill-img">
                         </div>
                         <div class="main-html">
                             <div class="html">
@@ -68,7 +70,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="css-3.png" class="skill-img">
+                            <img src="images/css-3.png" class="skill-img">
                         </div>
                         <div class="main-css">
                             <div class="css">
@@ -76,13 +78,51 @@
                             </div>
                         </div>
                         <div>
-                            <img src="python.png" class="skill-img">
+                            <img src="images/python.png" class="skill-img">
                         </div>
                         <div class="main-python">
                             <div class="python">
                                 60%
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h1>My Projects</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="contact_me_main">
+                    <div class="contact_me_header">
+                        <h1>Contact me</h1>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://github.com/erixko"><img class="contact-me-images" src="images/github.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/taric.erixko"><img class="contact-me-images" src="images/instagram.png"></a>
+                        <a><img class="contact-me-images" src="images/gmail.png" id="email"></a>
+                        <script>
+                            document.getElementById('email').addEventListener('click', function() {
+                              var textToCopy = 'michalvrablic01@gmail.com';
+
+                              var tempTextArea = document.createElement('textarea');
+                              tempTextArea.value = textToCopy;
+                              document.body.appendChild(tempTextArea);
+                        
+                              tempTextArea.select();
+                              tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+                        
+                              document.execCommand('copy');
+                        
+
+                              document.body.removeChild(tempTextArea);
+                        
+                              alert('Email copied');
+                            });
+                          </script>
                     </div>
                 </div>
             </div>
