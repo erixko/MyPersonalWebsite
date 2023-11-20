@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html style="user-select: none;">
     <head>
@@ -10,7 +9,7 @@
     <body>
         <header>
             <div>
-                <a href="login.html" style="text-decoration: none;">Login</a>
+                <a href="login.php" style="text-decoration: none;">Login</a>
             </div>
             <div>
                 <h1 style="text-align: center; font-size: 3rem;" class="prime-name">
